@@ -1,24 +1,22 @@
-# README
+アプリケーション名　comrade
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+アプリケーション概要
+仕事や遊びなど、何かを共にやる仲間を見つけるアプリです。ユーザーは画像付きの投稿で自分のやりたいことを共にしてくれる仲間を集めることができます。また、他ユーザーの投稿を見て仲間に名乗りを上げることができます。
 
-Things you may want to cover:
+URL
 
-* Ruby version
+テスト用アカウント
 
-* System dependencies
+利用方法
+ユーザー登録をすると画像つき投稿で仲間を集められるようになります。
+他ユーザーのやりたいことに名乗りを挙げられます。
 
-* Configuration
+要件
 
-* Database creation
+実装した機能
 
-* Database initialization
+実装予定の機能
 
-* How to run the test suite
+データベース設計
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ローカルでの動作方法
