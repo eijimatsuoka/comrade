@@ -1,9 +1,9 @@
 <div class="contents row">
-  <% @tweets.each do |tweet| %>
-    <div class="content_post" style="background-image: url(<%= tweet.image %>);">
-      <p><%= tweet.text %></p>
+  <% @posts.each do |post| %>
+    <div class="content_post" style="background-image: url(<%= post.image %>);">
+      <p><%= post.text %></p>
       <span class="name">
-        <%= post.name %>
+        <%= post.title %>
       </span>
     </div>
   <% end %>
