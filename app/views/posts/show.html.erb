@@ -6,5 +6,5 @@
       <%= image_tag @post.image.variant(resize: '500x500'), class: 'post-img' %>
       <p><%= link_to '編集', edit_post_path(@post.id), method: :get, class: "post-red-btn" %></p>
         <p class='or-text'>or</p>
-     
+         <%= link_to '削除', post_path(@post.id), method: :delete, class:'post-destroy' %>
 </div>
