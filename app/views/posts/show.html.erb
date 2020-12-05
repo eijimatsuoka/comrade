@@ -1,10 +1,16 @@
 <div class="post-info">
   <div class="title">
     <p><b><%= @post.title %></b></p>
+      <%= image_tag @post.image.variant(resize: '500x500'), class: 'post-img' %>
   </div>投稿内容
     <p><%= @post.text %></p>
-      <%= image_tag @post.image.variant(resize: '500x500'), class: 'post-img' %>
-      <p><%= link_to '編集', edit_post_path(@post.id), method: :get, class: "post-red-btn" %></p>
+    <div class="show-view">
+      <div class="edt-btn">
+        <p><%= link_to '編集', edit_post_path(@post.id), method: :get, class: "post-red-btn" %></p>
+      </div>
         <p class='or-text'>or</p>
-         <%= link_to '削除', post_path(@post.id), method: :delete, class:'post-destroy' %>
+          <div class="des-btn">
+            <%= link_to '削除', post_path(@post.id), method: :delete, class:'post-destroy' %>
+          </div>
+    </div>
 </div>
