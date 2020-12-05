@@ -1,13 +1,14 @@
 <div class="post-contents">
 
 </div>
-    <div class="contents row">
-      <% @posts.each do |post| %>
-        <div class="content_post" style="background-image: url(<%= post.image %>);">
+  <div class="contents row">
+    <% @posts.each do |post| %>
+      <%= link_to post_path(post.id), method: :get do %>
+        <div class="title">
+          <p><b><%= post.title %></b></p>
+        </div>投稿内容
           <p><%= post.text %></p>
-          <span class="name">
-            <%= post.title %>
-          </span>
-        </div>
+            <%= image_tag post.image.variant(resize: '500x500'), class: 'post-img' %>
       <% end %>
-    </div>
+    <% end %>
+  </div>

@@ -1,0 +1,7 @@
+<div class="post-info">
+  <div class="title">
+    <p><b><%= @post.title %></b></p>
+  </div>投稿内容
+    <p><%= @post.text %></p>
+      <%= image_tag @post.image.variant(resize: '500x500'), class: 'post-img' %>
+</div>
