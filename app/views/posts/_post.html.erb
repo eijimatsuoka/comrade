@@ -1,0 +1,18 @@
+<%= form_with(url: search_posts_path, local: true, method: :get, class: "search-form") do |form| %>
+  <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
+  <%= form.submit "検索", class: "search-btn" %>
+<% end %>
+  <div class="contents row">
+    <% @posts.each do |post| %>
+      <div class="by-user">
+        <%= link_to "by #{post.user.nickname}", user_path(post.user.id) %>
+        <%= link_to post_path(post.id), method: :get do %>
+          <div class="title">
+            <p><b><%= post.title %></b></p>
+              <%= image_tag post.image.variant(resize: '500x500'), class: 'post-img' %>
+          </div>
+        <% end %>
+      </div>投稿内容
+      <p><%= post.text %></p>
+    <% end %>
+  </div>
