@@ -1,0 +1,6 @@
+<%= form_with(model: @post, local: true) do |form| %>
+  <%= form.text_field :title, placeholder: "タイトル" %>
+  <%= form.file_field :image, id:"post-image" %>
+  <%= form.text_area :text, placeholder: "投稿内容を記述してください", rows: "10" %>
+  <%= form.submit "投稿" %>
+<% end %>

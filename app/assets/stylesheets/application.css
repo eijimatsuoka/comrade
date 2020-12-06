@@ -13,3 +13,198 @@
  *= require_tree .
  *= require_self
  */
+
+.aprname{
+  background: rgb(171, 235, 243);
+  display: flex;
+  justify-content: center;
+}
+
+.post-red-btn{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background: #00b5ad;
+  border: 1px #fff solid;
+  box-shadow: 0 0 0 3px #00b5ad;
+}
+
+.post-destroy{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background: red;
+  border: 1px #fff solid;
+  box-shadow: 0 0 0 3px #00b5ad;
+}
+
+.user_nav_grid-6{
+  position: absolute;
+  right: 40px;
+}
+
+.grid-6{
+  position: absolute;
+  right: 40px;
+}
+
+.login-btn{
+  position: relative;
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  overflow: hidden;
+  font-size: 0.8em;
+  color: #00b5ad;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #00b5ad solid;
+  transition: 0.4s ease;
+}
+
+.login-btn:hover {
+  color: #fff;
+}
+
+.login-btn::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  width: 400%;
+  height: 0%;
+  content: "";
+  background-color: #00b5ad;
+  transition: 0.4s;
+  -webkit-transform: translate(-50%, -50%) rotate(-30deg);
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+.login-btn:hover::before {
+  height: 400%;
+}
+
+.reg-btn{
+  position: relative;
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  overflow: hidden;
+  font-size: 0.8em;
+  color: #00b5ad;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #00b5ad solid;
+  transition: 0.4s ease;
+}
+
+.reg-btn:hover {
+  color: #fff;
+}
+
+.reg-btn::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  width: 400%;
+  height: 0%;
+  content: "";
+  background-color: #00b5ad;
+  transition: 0.4s;
+  -webkit-transform: translate(-50%, -50%) rotate(-30deg);
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+.reg-btn:hover::before {
+  height: 400%;
+}
+
+.logout-btn{
+  position: relative;
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  overflow: hidden;
+  font-size: 0.8em;
+  color: #00b5ad;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #00b5ad solid;
+  transition: 0.4s ease;
+}
+
+.logout-btn:hover {
+  color: #fff;
+}
+
+.logout-btn::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  width: 400%;
+  height: 0%;
+  content: "";
+  background-color: #00b5ad;
+  transition: 0.4s;
+  -webkit-transform: translate(-50%, -50%) rotate(-30deg);
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+.logout-btn:hover::before {
+  height: 400%;
+}
+
+.post-btn{
+  position: relative;
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  overflow: hidden;
+  font-size: 0.8em;
+  color: #00b5ad;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #00b5ad solid;
+  transition: 0.4s ease;
+}
+
+.post-btn:hover {
+  color: #fff;
+}
+
+.post-btn::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  width: 400%;
+  height: 0%;
+  content: "";
+  background-color: #00b5ad;
+  transition: 0.4s;
+  -webkit-transform: translate(-50%, -50%) rotate(-30deg);
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+.post-btn:hover::before {
+  height: 400%;
+}
+
+.edt-btn{
+  display: flex;
+  justify-content: center;
+}
+
+.or-text{
+  display: flex;
+  justify-content: center;
+}
+
+.des-btn{
+  display: flex;
+  justify-content: center;
+}
