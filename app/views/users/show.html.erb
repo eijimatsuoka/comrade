@@ -3,10 +3,12 @@
   </div>
     <p><%= @nickname %>さんの投稿一覧</p>
     <% @posts.each do |post| %>
-      <div class="title">
-        <p><b><%= post.title %></b></p>
-          <%= image_tag post.image.variant(resize: '500x500'), class: 'post-img' %>
-            </div>投稿内容
-            <p><%= post.text %></p>
+      <%= link_to post_path(post.id), method: :get do %>
+        <div class="title">
+          <p><b><%= post.title %></b></p>
+            <%= image_tag post.image.variant(resize: '500x500'), class: 'post-img' %>
+      <% end %>
+              </div>投稿内容
+              <p><%= post.text %></p>
     <% end %>
 </div>
