@@ -22,6 +22,9 @@
         <div class="post-btn">
           <b><%= link_to "投稿する", new_post_path, class: "post" %></b>
         </div>
+        <div class="user__info">
+          <b><%= link_to "#{current_user.nickname}(マイページ）", user_path(id: current_user) %></b>
+        </div>
       </div>
     <% else %>
       <div class="grid-6">
