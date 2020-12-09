@@ -1,6 +1,30 @@
 <div class="contents row">
   <div class="user-prf">
   </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <% @user=current_user %>
+          <th class="detail-user">ニックネーム</th>
+          <td class="detail-value"><%= @user.nickname %></td>
+        </tr>
+        <tr>
+          <th class="detail-user">年齢</th>
+          <td class="detail-value"><%= @user.age %></td>
+        </tr>
+        <tr>
+          <th class="detail-user">職業</th>
+          <td class="detail-value"><%= @user.occupation %></td>
+        </tr>
+        <tr>
+          <th class="detail-user">自己紹介文</th>
+          <td class="detail-value"><%= @user.self_introduction %></td>
+        </tr>
+      </tbody>
+    </table>
+      <div class="myp-edit">
+        <p><b><%= link_to "#{current_user.nickname}(マイページ編集）", edit_user_path(id: current_user) %></b></p>
+      </div>
     <p><%= @nickname %>さんの投稿一覧</p>
     <% @posts.each do |post| %>
       <%= link_to post_path(post.id), method: :get do %>

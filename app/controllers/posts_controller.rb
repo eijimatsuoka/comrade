@@ -45,6 +45,10 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def room_params
+    params.require(:room).permit(:name, user_ids: [])
+  end
+
   def move_to_index
     unless user_signed_in?
       redirect_to user_session_path
