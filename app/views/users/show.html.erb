@@ -22,6 +22,9 @@
         </tr>
       </tbody>
     </table>
+      <div class="myp-edit">
+        <p><b><%= link_to "#{current_user.nickname}(マイページ編集）", edit_user_path(id: current_user) %></b></p>
+      </div>
     <p><%= @nickname %>さんの投稿一覧</p>
     <% @posts.each do |post| %>
       <%= link_to post_path(post.id), method: :get do %>
