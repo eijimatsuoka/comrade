@@ -5,6 +5,10 @@ ja:
         email: メールアドレス
         nickname: ニックネーム
         password: パスワード
+      post:
+        title: タイトル
+        image: 画像
+        text: 投稿内容
   time:
     formats:
       default: "%Y/%m/%d %H:%M:%S"
