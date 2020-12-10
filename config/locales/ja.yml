@@ -1,4 +1,10 @@
 ja:
+  activerecord:
+    attributes:
+      user:
+        email: メールアドレス
+        nickname: ニックネーム
+        password: パスワード
   time:
     formats:
       default: "%Y/%m/%d %H:%M:%S"
