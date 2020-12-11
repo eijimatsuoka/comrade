@@ -27,6 +27,9 @@
           <div class="my-page">
             <b><%= link_to "#{current_user.nickname}(マイページ）", user_path(id: current_user) %></b>
           </div>
+          <div class="myp-edit">
+            <p><b><%= link_to "#{current_user.nickname}(マイページ編集）", edit_user_path(id: current_user) %></b></p>
+          </div>
           <div class="tyato">
             <%= render 'side' %>
           </div>
