@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
-      redirect_to root_path
+      redirect_to user_path(post.user.id)
     else
       render :edit
     end
