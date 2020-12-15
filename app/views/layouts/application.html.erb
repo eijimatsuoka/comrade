@@ -14,7 +14,7 @@
   <h1>comrade</h1>
   </div>
     <h3>👇~仲間を見つけよう~👇</h3>
-    <%= link_to "トップ", root_path %>
+      <%= breadcrumbs separator: " &rsaquo; " %>
     <% if user_signed_in? %>
       <div class="user_nav_grid-6">
         <div class="logout-btn">

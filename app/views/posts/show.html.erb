@@ -1,3 +1,4 @@
+<% breadcrumb :posts_show, @post %>
 <div class="post-info">
   <div class="title">
   <%= link_to "by #{@post.user.nickname}", user_path(@post.user.id) %>
